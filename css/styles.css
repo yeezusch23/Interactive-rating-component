@@ -59,12 +59,16 @@ h1 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: hsla(216, 12%, 54%, 0.1);
     display: grid;
     place-items: center;
     cursor: pointer;
     transition: all 0.2s;
     font-style: normal;
+}
+
+.item {
+    background-color: hsla(216, 12%, 54%, 0.1);
+    margin: 0 2px;
 }
 
 .item-i:hover {
