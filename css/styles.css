@@ -1,0 +1,123 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--very-dark-blue);
+    font-family: 'Overpass', sans-serif;
+    cursor:context-menu;
+    font-size: 15px;
+}
+
+.main {
+    max-width: 500px;
+    background-color: var(--dark-blue);
+    margin: 25px;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.rating-state {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--light-grey);
+}
+
+.img-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsla(216, 12%, 54%, 0.1);
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    margin: 0;
+    color: var(--white);
+}
+
+.items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item, .item-i{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsla(216, 12%, 54%, 0.1);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-style: normal;
+}
+
+.item-i:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.submit {
+    background-color: var(--orange);
+    border-radius: 24px;
+    padding: 15px 0;
+    color: var(--white);
+    border: none;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.thank-you-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--light-grey);
+    text-align: center;
+
+    display: none;
+}
+
+.ilustration-ty {
+    margin-bottom: 1.5rem;
+}
+
+.interactive-p {
+    border-radius: 20px;
+    background-color: hsla(216, 12%, 54%, 0.1);
+    padding: 10px;
+    margin-bottom: 2.5rem;
+    color: var(--orange);
+}
+
+.interactive-text {
+    font-weight: 400;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+
+
