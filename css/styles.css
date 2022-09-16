@@ -27,7 +27,6 @@ body {
 }
 
 .rating-state {
-    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,17 +40,22 @@ body {
     background-color: hsla(216, 12%, 54%, 0.1);
     display: grid;
     place-items: center;
+    margin-bottom: 1rem;
 }
 
 h1 {
     margin: 0;
+    margin-bottom: 1.5rem;
     color: var(--white);
 }
 
 .items-container {
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .item, .item-i{
@@ -68,7 +72,7 @@ h1 {
 
 .item {
     background-color: hsla(216, 12%, 54%, 0.1);
-    margin: 0 2px;
+    margin: 3px auto;
 }
 
 .item-i:hover {
@@ -77,6 +81,7 @@ h1 {
 }
 
 .submit {
+    margin-top: 1.5rem;
     background-color: var(--orange);
     border-radius: 24px;
     padding: 15px 0;
